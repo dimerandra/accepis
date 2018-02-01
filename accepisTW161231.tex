@@ -1,0 +1,346 @@
+%% document class
+\documentclass[a4paper]{article}
+
+%% packages
+\input{settings/packages}
+\usepackage{epstopdf}
+\epstopdfsetup{outdir=./}
+
+%% page settings
+\input{settings/page}
+
+\usepackage[labelsep=space]{caption}
+\captionsetup[table]{labelfont=bf,justification=raggedright,singlelinecheck=false}
+%\captionsetup[table]{labelfont=bf,justification=justified,singlelinecheck=false}
+%\newcommand\followingcaption[1]{\captionsetup{labelfont=bf,justification=raggedright,labelsep=space,singlelinecheck=false}\caption[]{#1}}
+
+\renewcommand*{\tableautorefname}{Tab.}
+\renewcommand*{\figureautorefname}{Fig.}
+\renewcommand\figurename{\textbf{Fig.}}
+\renewcommand\tablename{\textbf{Tab.}}
+
+%% own commands
+\input{settings/macros}
+\newcommand{\imp}[1]{\underline{\textit{#1}}}
+\newcommand{\dashrule}[1][black]{%
+	\color{#1}\rule[\dimexpr.5ex-.2pt]{4pt}{.4pt}\xleaders\hbox{\rule{4pt}{0pt}\rule[\dimexpr.5ex-.2pt]{4pt}{.4pt}}\hfill\kern0pt%
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{titlepage}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+\center % Center everything on the page
+ %----------------------------------------------------------------------------------------
+
+
+\textsc{\LARGE - Carl von Ossietzky University of Oldenburg - }\\[1.5cm] % Name of your university/college
+\HRule \\[0.3cm]
+{ \huge \bfseries Survey of Accidental Vascular Epiphytes in the Harz Mountains}\\[0.3cm] % Title of your document
+%----------------------------------------------------------------------------------------
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=1\textwidth, angle =90] {DSC6246.jpg}
+	%\caption{A figure caption beneath the figure for description of the depicted concept which sometimes can be very long}
+	\label{fig_titlefig}
+\end{figure}
+
+%----------------------------------------------------------------------------------------
+\HRule \\[2cm]
+%----------------------------------------------------------------------------------------
+\begin{flushleft}
+\large
+\emph{Author:} Tizian Weichgrebe \\
+\large% Supervisor's Name
+\emph{Supervisor:} Prof. Dr. Gerhard Zotz \\
+\emph{Date:} {\large \today}\\[3cm]
+\end{flushleft} 
+%----------------------------------------------------------------------------------------
+\vfill % Fill the rest of the page with whitespace
+
+\end{titlepage}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Abstract}
+
+This is my great abstract
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Introduction}
+As common epiphytes are in the tropics, it is hard to identify inert characteristics in being an epiphyte. To further define this functional group of plants, it is useful to study the differences of facultative and so-called accidental epiphytes. Which factors enable some terrestrial plants to live accidentally as epiphytes? And which hinder most of terrestrial plants not to? If there are nearly no facultative epiphytes in the temperate zone, epiphytism may be a selective threshold. Especially in the temperate zone, there are distinctively less epiphytes than in the tropics with a nearly irrelevant proportion of the ecosystem biomass. Even though accidental epiphytes in the temperate zones have been evaluated not to be meant to grow on other plants, there is hardly any quantitative background to this hypothesis yet.
+
+To quantify (vascular) epiphyte occurrences in the temperate zones, we are going to conduct an ongoing survey in the Harz Mountains. Furthermore, this survey is about to determine in how far temperate epiphytes are just accidental or if there are recurring occurrences of epiphytism which can be beneficial for various reasons. We chose the Harz Mountains for their humid climate with partly old forests. Preferably, we want to reproduce the tree community of the Harz Mountains so to study a possible host specificity of epiphytes which could then give information on niche demands of temperate epiphytes.
+
+Both, host tree identity as well as elevation were anticipated to be important factors for 
+
+For each tree a set of parameters was recorded. Moss cover was roughly estimated due to its function as water storage or for soil accumulation. 
+Especially in the lower trunk regions of trees, there was often a transition zone between mosses and soil covered bark. 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Materials \& Methods}
+To display the tree community as well as various elevations of the Harz Mountains, the survey nearly stretched above the whole area of the mountains. By that, we focused mostly on the common tree species but included even some rare as well as \imp{artificial} species to record potential epiphyte load. Since elevation was anticipated to be an important factor  influencing tree structure as well as the potentially epiphytic vegetation, a wide elevation range was examined. However, we focused on higher elevations because the increased humidity was expected to increase the epiphyte load.
+
+\textbf{\textit{Tree Stands}}\\
+For practical reasons and for a certain unlikelihood of epiphytes to occur, trees with a diameter at breast height (dbh) of less than 5 cm were disregarded. Selection of plots followed linear structures such as streets or was tried to match in parking sites. Following that, it was distinguished between streets, forest roads (still drivable with car), dirt tracks (in forest, enlarged for hiking), beaten paths (in forest, small track). For each of the plots, about 50 trees were selected for examination. If trees were on both sides of a plot, about the same number of trees was taken from each. If there were for any reason less than 50 trees, then even noticeably smaller numbers were taken as well. This was done to include small tree stands with rare species as well. Since humidity was expected to be an if not the most important factor to epiphyte viability, the distance of the tree stands to the next river or lake was estimated. For each plot, the type of structure (different path types), number of trees, elevation (m), coordinates were noted.
+
+\textbf{\textit{Measured Parameters}}\\
+Following variables were examined for each tree: plot, tree species, dbh (cm), height (m), an estimate of the moss cover (\%), ratio of occupied to empty forks and number as well as species of epiphytes. Noted parameters for examined epiphytes were: tree id, epiphyte species, height in the tree (m), locations on the tree \imp{(classes: fork, crawling trunk, stem base, steep stem, root)} and presence of blossoms or fruits(0/1). If epiphytes were on the trunk itself, they were noted as such. To distinguish between plants that grow up a trunk from below and use this transition zone as well as plants that are truly epiphytic in higher parts of trees, the height of epiphytes in the trees was estimated. Additionally, photos of each tree with epiphytes and of each epiphyte itself were taken for later identification and to find them again in coming surveys.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Results}
+Tree stands were selected along an elevation range between 102 and 807 m (mean $ \pm $ sd: 406 $ \pm $ 139). The spread of plots was biased to the western side of the Harz Mountains (due to higher elevations) but nearly covered their whole area. Since especially the upper ranges of the Mountains were used for silviculture, they mainly included conifers (namely \textit{Picea abies}).
+
+ 
+Epiphytes were found along the whole range of elevation as well 
+AS \cite{Zotz2009} will know, here the results will appear.
+
+In total, the survey included \imp{XXXXX} tree species which were very different in their abundance (cf. \autoref{tab:alltrees}; cf. \autoref{tab:alltrees} for the complete list of taxa). As mentioned above, especially high stretches of the Harz Mountains on the western side were used extensively for silviculture. In these parts, \textit{Picea abies} dominates the tree community. 
+
+\begin{longtable}[H]{@{} >{\itshape}lccccc @{}}
+	\caption{List of all found epiphytic genera/species with the number of occupied trees and the total number of individuals. The species were ordered descending after the number of occupied trees. Summary of unidentifiable epiphytes and seedlings is given at the bottom of the table.}
+	\label{tab:alltaxa}
+	%	\begin{tabular}{lccc}
+	\\	\toprule
+	\multicolumn{1}{l}{\textbf{Species}} & \multicolumn{1}{c}{\textbf{No. Occupied Trees}} & \multicolumn{1}{c} {\textbf{No. Individuals}} & \multicolumn{1}{c} {\textbf{Max. Height}} & \multicolumn{1}{c} {\textbf{Mean Size}} \\
+	\midrule
+	\endfirsthead
+	
+	\caption{ \textit{-- continued from previous page}} \\
+	\toprule
+	\multicolumn{1}{l}{\textbf{Species}} & \multicolumn{1}{c}{\textbf{No. Occupied Trees}} & \multicolumn{1}{c} {\textbf{No. Individuals}} & \multicolumn{1}{c} {\textbf{Max. Height}} & \multicolumn{1}{c} {\textbf{Mean Size}}  \\
+	\midrule
+	\endhead
+	
+	\bottomrule \multicolumn{5}{r}{{\textit{-- continued on next page}}} \\
+	\endfoot
+	
+	\bottomrule		
+	\endlastfoot		
+	
+			Geranium robertianum & 77 & 173 & 0.70 & 14.53 $\pm$ 11.53 \\ 
+			Poaceae sp. & 61 & 155 & 0.50 & 7.33 $\pm$  5.20 \\ 
+			Galeopsis sp. & 51 & 83 & 9.00 & 23.85 $\pm$ 12.77 \\ 
+			Impatiens sp. & 48 & 111 & 3.00 & 11.42 $\pm$ 6.50 \\ 
+			Sorbus aucuparia & 32 & 50 & 5.00 & 20.00 \\ 
+			Oxalis acetosella & 31 & 95 & 0.20 & 4.75 $\pm$ 0.87 \\ 
+			Dactylis glomerata & 31 & 76 & 2.00 & 33.33 $\pm$ 25.17 \\ 
+			Glechoma hederacea & 24 & 105 & 0.70 & 9.61 $\pm$ 9.71 \\ 
+			Acer pseudoplatanus & 20 & 33 & 9.00 & 20.00  \\ 
+			Rubus sp. & 18 & 33 & 2.00 & 17.50 $\pm$ 5.00 \\ 
+			Urtica dioica & 15 & 49 & 0.90 & 37.50 $\pm$ 20.62 \\ 
+			Epilobium sp. & 13 & 51 & 0.60 & 15.00 \\ 
+			Poa sp. & 12 & 50 & 0.20 &  \\   
+	
+	%	\end{tabular}
+\end{longtable} 
+
+
+Most important taxa included very common herb species abundant in the flora of the Harz Mountains like \textit{Galeopsis sp.}, \textit{Impatiens sp.}, \textit{Geranium robertianum} and many common species of the Poaceae (cf. \autoref{tab:mtaxa}; cf. \autoref{tab:alltaxa} for the complete list of taxa).
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Discussion}
+
+This will be the discussion.
+
+\textit{Picea abies} -->  However, due to a new forestation approach, the forest structure will change. Deciduous trees like \textit{Fagus sylvatica} or the  \textit{Acer} species will benefit from this, which will have an influence on the epiphyte community.
+
+\subsection{Further research}
+With the conducted epiphyte survey we ....
+\begin{itemize}
+\item braun-blanquiet
+\item nearest neighbor
+\item gradient climatic and topographic
+\item focal trees influencing others
+\item just in sense of repeating the whole...
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% bibliography
+\bibliographystyle{apalike}
+\bibliography{accepis_library.bib} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Appendix}
+\setcounter{table}{0}
+\renewcommand{\thetable}{A-\arabic{table}}
+Here I will include a table of all found taxa (\autoref{tab:alltaxa}).
+\\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% TABLE ALL TREES %%%
+\begin{longtable}[H]{@{} >{\itshape}lc *{4}{rcl} @{}} %{lcrclrclrclrcl}
+	\caption[Complete Tree List]{Complete list of host tree species.}
+	\label{tab:alltrees}
+	\\ \toprule
+	\multicolumn{1}{l}{\textbf{Host Species}} & \multicolumn{1}{c}{\textbf{No. Individuals}} & 
+	\multicolumn{3}{c}{\textbf{Elevation}} & \multicolumn{3}{c}{\textbf{Height (m)}} & 
+	\multicolumn{3}{c}{\textbf{DBH (cm)}} & \multicolumn{3}{c}{\textbf{Moss Cover}}  \\ 
+	• & • & mean & • & sd & mean & • & sd & mean & • & sd & mean & • & sd \\
+	\midrule
+	\endfirsthead
+	
+	\caption{ \textit{-- continued from previous page}} \\
+	\toprule
+	\multicolumn{1}{l}{\textbf{Host Species}} & \multicolumn{1}{c}{\textbf{No. Individuals}} & \multicolumn{3}{c}{\textbf{Elevation}} &
+	\multicolumn{3}{c}{\textbf{Height (m)}} & \multicolumn{3}{c}{\textbf{DBH (cm)}} & \multicolumn{3}{c}{\textbf{Moss Cover}}  \\ 
+	• & • & mean & • & sd & mean & • & sd & mean & • & sd & mean & • & sd
+	\\ \midrule
+	\endhead
+	
+	\bottomrule \multicolumn{14}{r}{{\textit{-- continued on next page}}} \\
+	\endfoot
+	
+	\bottomrule		
+	\endlastfoot		
+	
+	Acer pseudoplatanus & 5 & 30.2 & $\pm$ & 5.4& •&  $\pm$ & •& •& $\pm$ & •& •& $\pm$ & •  \\ 
+	Acer platanoide & 6 & 30.2 & $\pm$ & 5.4& •&  $\pm$ & •& •& $\pm$ & •& •& $\pm$ & •  \\ 
+	Alnus glutinosa & 7 & 30.2 & $\pm$ & 5.4& •&  $\pm$ & •& •& $\pm$ & •& •& $\pm$ & • \\ 
+	• & • & • & $\pm$ & •& •&  $\pm$ & •& •& $\pm$ & •& •& $\pm$ & • \\ 
+	
+\end{longtable}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% TABLE ALL TAXA %%% 
+\begin{longtable}[H]{@{} >{\itshape}lccccc @{}}
+	\caption{List of all found epiphytic genera/species with the number of occupied trees and the total number of individuals. The species were ordered descending after the number of occupied trees. Summary of unidentifiable epiphytes and seedlings is given at the bottom of the table.}
+	\label{tab:alltaxa}
+%	\begin{tabular}{lccc}
+		\\	\toprule
+		\multicolumn{1}{l}{\textbf{Species}} & \multicolumn{1}{c}{\textbf{No. Occupied Trees}} & \multicolumn{1}{c} {\textbf{No. Individuals}} & \multicolumn{1}{c} {\textbf{Max. Height}} & \multicolumn{1}{c} {\textbf{Mean Size}} & \multicolumn{1}{c} {\textbf{SD Size}} \\
+		\midrule
+		\endfirsthead
+		
+		\caption{ \textit{-- continued from previous page}} \\
+		\toprule
+		\multicolumn{1}{l}{\textbf{Species}} & \multicolumn{1}{c}{\textbf{No. Occupied Trees}} & \multicolumn{1}{c} {\textbf{No. Individuals}} & \multicolumn{1}{c} {\textbf{Max. Height}} & \multicolumn{1}{c} {\textbf{Mean Size}} & \multicolumn{1}{c} {\textbf{SD Size}}  \\
+		\midrule
+		\endhead
+
+		\bottomrule \multicolumn{6}{r}{{\textit{-- continued on next page}}} \\
+		\endfoot
+
+		\bottomrule		
+		\endlastfoot		
+		
+		 Geranium robertianum & 77 & 173 & 0.70 & 14.53 & 11.53 \\ 
+		 Poaceae sp. & 61 & 155 & 0.50 & 7.33 & 5.20 \\ 
+		 Galeopsis sp. & 51 & 83 & 9.00 & 23.85 & 12.77 \\ 
+		 Impatiens sp. & 48 & 111 & 3.00 & 11.42 & 6.50 \\ 
+		 Sorbus aucuparia & 32 & 50 & 5.00 & 20.00 &  \\ 
+		 Oxalis acetosella & 31 & 95 & 0.20 & 4.75 & 0.87 \\ 
+		 Dactylis glomerata & 31 & 76 & 2.00 & 33.33 & 25.17 \\ 
+		 Glechoma hederacea & 24 & 105 & 0.70 & 9.61 & 9.71 \\ 
+		 Acer pseudoplatanus & 20 & 33 & 9.00 & 20.00 & 0.00 \\ 
+		 Rubus sp. & 18 & 33 & 2.00 & 17.50 & 5.00 \\ 
+		 Urtica dioica & 15 & 49 & 0.90 & 37.50 & 20.62 \\ 
+		 Epilobium sp. & 13 & 51 & 0.60 & 15.00 &  \\ 
+		 Poa sp. & 12 & 50 & 0.20 &  &  \\ 
+		 Fern sp. & 12 & 18 & 4.50 & 17.00 & 18.38 \\ 
+		 Taraxacum officinalis & 10 & 17 & 4.00 & 8.00 & 0.00 \\ 
+		 Rubus idaeus & 9 & 15 &  &  &  \\ 
+		 Ranunculus repens & 9 & 11 & 0.15 &  &  \\ 
+		 Picea abies & 7 & 7 & 5.00 & 5.00 &  \\ 
+		 Lapsana sp. & 7 & 9 & 2.00 &  &  \\ 
+		 Veronica sp. & 6 & 20 & 1.80 & 20.00 &  \\ 
+		 Fraxinus excelsior & 6 & 7 & 3.00 & 15.00 &  \\ 
+		 Fragaria sp. & 6 & 13 & 0.05 & 3.00 & 0.00 \\ 
+		 Brassicaceae sp. & 5 & 9 & 0.10 &  &  \\ 
+		 Sambucus nigra & 4 & 4 & 3.00 &  &  \\ 
+		 Geum sp. & 4 & 16 &  &  &  \\ 
+		 Geum rivale & 4 & 4 & 0.70 & 50.00 &  \\ 
+		 Caryophyllaceae sp. & 4 & 7 &  &  &  \\ 
+		 Acer platanoides & 4 & 5 &  &  &  \\ 
+		 Senecio sp. & 3 & 6 & 0.05 &  &  \\ 
+		 Galium aparine & 3 & 11 & 0.50 & 30.00 & 0.00 \\ 
+		 Aegopodium podagraria & 3 & 6 &  &  &  \\ 
+		 Ribes sp. & 2 & 2 & 5.00 &  &  \\ 
+		 Polypodium vulgare & 2 & 5 & 10.00 &  &  \\ 
+		 Poa nemoralis & 2 & 2 & 0.05 &  &  \\ 
+		 Myosotis sp. & 2 & 2 &  &  &  \\ 
+		 Lamiaceae sp. & 2 & 2 &  &  &  \\ 
+		 Galium odoratum & 2 & 23 & 0.25 &  &  \\ 
+		 Carpinus sp. & 2 & 2 &  &  &  \\ 
+		 Agrostis capillaris & 2 & 15 & 0.10 &  &  \\ 
+		 Viscum sp. & 1 & 1 &  &  &  \\ 
+		 Vaccinium myrtillus & 1 & 1 & 0.05 &  &  \\ 
+		 Ulmus glabra & 1 & 2 & 7.00 &  &  \\ 
+		 Tilia cordata & 1 & 1 &  &  &  \\ 
+		 Stellaria media & 1 & 1 & 3.00 &  &  \\ 
+		 Stachys sp. & 1 & 1 & 0.05 & 5.00 &  \\ 
+		 Poa trivialis & 1 & 4 & 0.05 &  &  \\ 
+		 Phyteuma sp. & 1 & 1 & 0.30 &  &  \\ 
+		 Luzula luzuloides & 1 & 2 &  &  &  \\ 
+		 Lolium perenne & 1 & 1 &  &  &  \\ 
+		 Hypericum maculatum & 1 & 2 & 0.00 &  &  \\ 
+		 Hieracium murorum & 1 & 3 & 0.05 &  &  \\ 
+		 Hieracium laevigatum & 1 & 3 & 0.50 &  &  \\ 
+		 Geum urbanum & 1 & 1 & 4.00 &  &  \\ 
+		 Fagus sylvatica & 1 & 1 &  &  &  \\ 
+		 Crategus sp. & 1 & 1 &  &  &  \\ 
+		 Convolvulus sp. & 1 & 1 &  &  &  \\ 
+		 Chelidonium majus & 1 & 1 &  &  &  \\ 
+		 Cerastium sp. & 1 & 3 & 3.00 &  &  \\ 
+		 Campanula rotundifolia & 1 & 1 & 0.10 & 10.00 &  \\ 
+		 Asteraceae sp. & 1 & 1 &  &  &  \\ 
+		 Arrhenatherum elatius & 1 & 2 & 1.50 & 40.00 & 14.14 \\ 
+		 Apiaceae sp. & 1 & 1 &  &  &  \\ 
+		 Anthriscus cerefolium & 1 & 1 & 0.70 & 30.00 &  \\ 
+		 Aliaria petiolata & 1 & 3 & 3.00 &  &  \\ 
+		 Acer sp. & 1 & 1 &  &  &  \\ 
+		 Abies sp. & 1 & 2 &  &  &  \\ 
+		 \multicolumn{6}{@{}c@{}}{\makebox[\linewidth]{\dashrule}} \\[-\jot]
+		 unidentified & 36 & 74 & 4.00 & 15.00 &  \\ 
+		 seedling & 17 & 25 & 2.50 & 1.67 & 0.58 \\ 
+		 
+%	\end{tabular}
+\end{longtable} 
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
+
+
+% REST:
+%
+%Table Main Taxa old
+%
+%\begin{table}[h]
+%	%	\centering
+%	\ttabbox[\FBwidth]
+%	{\caption{List of most common epiphytic species with the number of the occupied trees and the total number of individuals. The species were ordered descending after the number of occupied trees.} \label{tab:mtaxa}}
+%	{\begin{tabular}{lcccc}
+%			\toprule
+%			\multicolumn{1}{l}{\textbf{Species}} & \multicolumn{1}{c}{\textbf{No. Occupied Trees}} & \multicolumn{1}{c} {\textbf{No. Individuals}} & \multicolumn{1}{c} {\textbf{Max. Height}} & \multicolumn{1}{c} {\textbf{Mean Size}} \\
+%			\midrule
+%			Geranium robertianum & 77 & 173 & 0.70 & 14.53 $\pm$ 11.53 \\ 
+%			Poaceae sp. & 61 & 155 & 0.50 & 7.33 $\pm$  5.20 \\ 
+%			Galeopsis sp. & 51 & 83 & 9.00 & 23.85 $\pm$ 12.77 \\ 
+%			Impatiens sp. & 48 & 111 & 3.00 & 11.42 $\pm$ 6.50 \\ 
+%			Sorbus aucuparia & 32 & 50 & 5.00 & 20.00 \\ 
+%			Oxalis acetosella & 31 & 95 & 0.20 & 4.75 $\pm$ 0.87 \\ 
+%			Dactylis glomerata & 31 & 76 & 2.00 & 33.33 $\pm$ 25.17 \\ 
+%			Glechoma hederacea & 24 & 105 & 0.70 & 9.61 $\pm$ 9.71 \\ 
+%			Acer pseudoplatanus & 20 & 33 & 9.00 & 20.00  \\ 
+%			Rubus sp. & 18 & 33 & 2.00 & 17.50 $\pm$ 5.00 \\ 
+%			Urtica dioica & 15 & 49 & 0.90 & 37.50 $\pm$ 20.62 \\ 
+%			Epilobium sp. & 13 & 51 & 0.60 & 15.00 \\ 
+%			Poa sp. & 12 & 50 & 0.20 &  \\   
+%			\bottomrule
+%		\end{tabular}}
+%	\end{table} 
